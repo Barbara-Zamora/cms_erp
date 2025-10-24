@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';   // cambia a HashRouter
 import App from './app/App';
 import './styles/tailwind.css';
 import { AppProviders } from './providers/AppProviders';
@@ -13,10 +13,10 @@ if (!root) {
 
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <AppProviders>
         <App />
       </AppProviders>
-    </BrowserRouter>
-  </React.StrictMode>,
+    </HashRouter>
+  </React.StrictMode>
 );
